@@ -3,7 +3,7 @@
 		<v-container>
 			<v-text-field placeholder="What needs to be done..." v-model="newTodo" @keyup.enter="saveTodo" clearable class="mx-5"></v-text-field>
 			<v-textarea v-if="newTodo" placeholder="Enter Additional Details Here..." class="mx-5" rows="1" v-model="newTodoDetail" clearable auto-grow @keyup.enter="saveTodo"></v-textarea>
-			<v-list flat subheader three-line>
+			<v-list flat subheader two-line>
 				<v-subheader>Todos</v-subheader>
 
 				<v-list-item-group v-model="settings" multiple active-class="">
